@@ -6,45 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journey</title>
-    <link rel="stylesheet" href="./reset.css">
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
-    <header>
-      <h1 id="home">WebDev/CompSci Journey</h1>
-      <nav>
-        <a href="#html">HTML</a>
-        <a href="#css">CSS</a>
-        <a href="#javascript">JavaScript</a>
-        <a href="#linux">Linux</a>
-        <a href="#git">Git & GitHub</a>
-        <a href="#sql">SQL</a>
-        <a href="#node">Node.js</a>
-        <a href="#express">Express.js</a>
-        <a href="#react">React.js</a>
-        <a href="#nextjs">Next.js</a>
-        <a href="#typescript">TypeScript</a>
-        <a href="#ruby">Ruby | Rails</a>
-        <a href="#python">Python | Flask | Django</a>
-      </nav>
-    </header>
-    <hr>
-    <div class="container">
+    <div class="container-grid">
+      <header class="main-header">
+        <div class="road-pic-div"><img class='road-pic' src="./road.jpg" alt="mountainous road"></div>
+        <h1 id="home">Web Development & Computer Science <em>Journey</em></h1>
+        <nav>
+          <a href="#html">HTML</a>
+          <a href="#css">CSS</a>
+          <a href="#javascript">JavaScript</a>
+          <a href="#linux">Linux</a>
+          <a href="#git">Git & GitHub</a>
+          <a href="#sql">SQL</a>
+          <a href="#node">Node.js</a>
+          <a href="#express">Express.js</a>
+          <a href="#react">React.js</a>
+          <a href="#nextjs">Next.js</a>
+          <a href="#typescript">TypeScript</a>
+          <a href="#ruby">Ruby | Rails</a>
+          <a href="#python">Python | Flask | Django</a>
+          <a href="#trig">Trigonometry</a>
+          <a href="#precal">Precalculus</a>
+          <a href="#stats">Statistics</a>
+          <a href="#discrete">Discrete Math</a>
+          <a href="#calc">Calculus</a>
+          <a href="#python">Python Programming</a>
+          <a href="#java">Java Programming</a>
+          <a href="#compsys">Computer Systems</a>
+          <a href="#db">Databases</a>
+          <a href="networking">Communications and Networking</a>
+          <a href="#webprog">Web Programming</a>
+          <a href="#os">Operating Systems</a>
+          <a href="#dsa">Data Structures | Algorithms</a>
+          <a href="#dm-ml">Data Mining | Machine Learning</a>
+        </nav>
+      </header>
 
-      <div class="left-col">
-        <h2>HTML & CSS</h2>
+
+      <!-- <main> -->
+      <section class='left-col'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-browser-chrome"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+        </svg>
+        <h2>Web Development</h2>
         <h3 id=" html">HTML</h3>
+        <p>The <strong>basic</strong> structure of an <em>HTML</em> page:</p>
+        <img class='img-html' src="images/html-template.png" alt="html code">
+        <div class="css_selectors">
+          <h3>Basic selectors</h3>
+          <p>Tag type selector:
+            <span> p { ... }</span>
+          </p>
 
-        <img class='images' src="./html-template.png" alt="">
+          <p>Class selector: <span> .some-class { ... }</span></p>
+          <p>ID selector: <span> #some-id { ... }</span></p>
+          <p>Attribute selector (new): <span> [src] { ... }</span></p>
+          <p>Universal selector (new):
+            <span> * { ... }</span>
+          </p>
+          <h3>Grouping selectors</h3>
+          <p>Grouping selector / selector list:
+            <span> p, .some-class { ... }</span>
+          </p>
+          <h3>Combinators</h3>
+          <p>Combined selector:
+            <span> p.some-class { ... }</span>
+          </p>
+          <p>Descendant combinator:
+            <span> div span </span>
+          </p>
 
+          <p>Child combinator:
+            <span> ul > li </span>
+          </p>
 
-        <h3 id="css">CSS</h3>
+          <p>General sibling combinator:
+            <span> p ~ span </span>
+          </p>
+          <p>Adjacent sibling combinator:
+            <span> h2 + p </span>
+          </p>
+          <h3>Pseudo-classes and pseudo-elements</h3>
+          <p>Pseudo element:
+            <span> a:hover { ... }</span>
+          </p>
+          <p>Pseudo class:
+            <span> p::first-line { ... }</span>
+          </p>
+        </div>
+        <hr>
+        <ul>
+          <li>
+            <h4><a href="https://flexboxfroggy.com/">FLEXBOX FROGGY</a> </h4>
+          </li>
+          <li>
+            <h4><a href="https://cssgridgarden.com/">GRID GARDEN</a> </h4>
+          </li>
+        </ul>
         <h3>JavaScript</h3>
         <h3>Linux</h3>
         <h3>Git - GitHub</h3>
         <code>
-          <pre>
+          <pre class="text-primary">
             echo "# journey" >> README.md
             git init
             git add README.md
@@ -62,17 +133,39 @@
         <h3>TypeScript</h3>
         <h3>Ruby | Rails</h3>
         <h3>Python | Flask | Django</h3>
-      </div>
+        <a href="#home" class="btn" aria-pressed="true">Top of Page</a>
+      </section>
       <!-- end left column  -->
-      <div class="right-col">
+      <section class="right-col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-laptop"
+          viewBox="0 0 16 16">
+          <path
+            d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+        </svg>
         <h2>Computer Science</h2>
-        <h3>Become a Trigonometry & Precalculus Master</h3>
-      </div>
+        <h3 id="trig">Trigonometry</h3>
+        <h3 id="precal">Precalculus</h3>
+        <h3 id="stats">Statistics</h3>
+        <h3 id="discrete">Discrete Math</h3>
+        <h3 id="calc">Calculus</h3>
+        <h3 id="python">Python Programming</h3>
+        <h3 id="java">Java Programming</h3>
+        <h3 id="compsys">Computer Systems</h3>
+        <h3 id="db">Databases</h3>
+        <h3 id="networking">Communications and Networking</h3>
+        <h3 id="webprog">Web Programming</h3>
+        <h3 id="os">Operating Systems</h3>
+        <h3 id="dsa">Data Structures | Algorithms</h3>
+        <h3 id="dm-ml">Data Mining | Machine Learning</h3>
+        <a href="#home" class="btn" aria-pressed="true">Top of Page</a>
+      </section>
       <!-- end right column  -->
+      <!-- </main> -->
+      <!-- end container  -->
+      <footer>
+        Copyright &copy; 2023 by MichaelC
+      </footer>
     </div>
-    <!-- end container  -->
-    <footer>
-    </footer>
   </body>
 
 </html>
